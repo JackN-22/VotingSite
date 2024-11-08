@@ -1,0 +1,22 @@
+<p-toast></p-toast>
+<div class="shining-star-vote">
+    <h1>Choose your <span>Shining Star!</span></h1>
+    <div class="shining-star-search">
+        <input type="search" placeholder="Search for your Shining Star!">
+    </div>
+    <div class="cards-container">
+        <ng-container *ngFor="let user of userList;">
+            <app-card-template 
+                [users]="user"
+                (cardIdOutput)="getClickedUsername(user.userName)"
+                appCardClick
+                [cardId]="user.username"
+                (click)="getClickedUsername(user.userName)"
+            >
+
+            </app-card-template>
+        </ng-container>
+    </div>
+</div>
+<button class="btn-submit" (click)="submitSelectedCard()">Submit</button>
+<div class="st-reason" id="reason-st"></div>

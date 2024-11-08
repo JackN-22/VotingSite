@@ -1,0 +1,49 @@
+<div class="auth-form-section">
+    <div class="form-wrapper">
+        <h1>Sign Up</h1>
+        <form #registerForm="ngForm" (ngSubmit)="register()" autocomplete="off">
+            <div class="form-group">
+                <label for="username">Name</label>
+                <input 
+                    id="username"
+                    [(ngModel)]="model.name"
+                    name="username"
+                    placeholder="Enter your name" 
+                    required
+                >
+                <label for="username">Username</label>
+                <input 
+                    [(ngModel)]="model.username"
+                    name="username"
+                    placeholder="Enter your username" 
+                    required
+                >
+            </div>
+            <label for="username">Job Title</label>
+            <input 
+                [(ngModel)]="model.jobTitle"
+                name="username"
+                placeholder="Enter your Job Title" 
+                required
+            >
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input 
+                    name="password"
+                    [(ngModel)]="model.password"
+                    placeholder="Enter your password" 
+                    type="password"
+                    required
+                >
+            </div>
+            
+            <button type="submit" class="auth-submit-btn">Sign Up</button>
+        </form>
+
+        <div class="auth-footer">
+            <p>Already a member? 
+                <a routerLink="/" class="signup-link">Log In</a>
+            </p>
+        </div>
+    </div>
+</div>

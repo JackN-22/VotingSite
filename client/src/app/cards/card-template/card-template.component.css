@@ -1,0 +1,63 @@
+.user-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 10px;
+    border-radius: 8px;
+    margin-top: 15px;
+    cursor: pointer;
+    border: 1px solid var(--default-border-color, #ddd);
+    background-color: var(--card-bg-color, #ffffff);
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.user-cards:active {
+    border-color: black;
+}
+
+.user-cards img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 2px solid var(--border-color, #e0e0e0);
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.user-details p {
+    font-size: 15px;
+    line-height: 1.4;
+    margin: 5px 0;
+    color: var(--text-color, #333);
+}
+
+.bc-name {
+    color: var(--highlight-color, #e63946);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.user-cards:hover,
+.user-cards:active,
+.user-cards:focus,
+.cards-highlighted {
+    border: 2px solid var(--bc-red-, #e63946);
+    box-shadow: 0 6px 14px rgba(230, 57, 70, 0.2);
+    transform: scale(1.05);
+}
+
+.clicked-border {
+    border: 3px solid var(--bc-red-, #e63946);
+}
+
+.default-border {
+    border-color: var(--heading-color-, #ddd);
+}

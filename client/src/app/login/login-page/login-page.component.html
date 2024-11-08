@@ -1,0 +1,43 @@
+<div  class="auth-container">
+    <div class="auth-image-section">
+        <img src="/bc-admin-page.jpg" alt="Admin Login">
+    </div>
+    
+    <div class="auth-form-section">
+        <div class="form-wrapper">
+            <h1>Sign In</h1>
+            <form #loginForm="ngForm" (ngSubmit)="login()" autocomplete="off">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input 
+                        [(ngModel)]="model.username"
+                        id="username"
+                        name="username"
+                        placeholder="Enter your username" 
+                        required
+                    >
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input 
+                        [(ngModel)]="model.password"
+                        id="password"
+                        name="password"
+                        placeholder="Enter your password" 
+                        type="password"
+                        required
+                    >
+                </div>
+                
+                <button type="submit" class="auth-submit-btn">Sign In</button>
+            </form>
+
+            <div class="auth-footer">
+                <p>Not a member? 
+                    <a routerLink="/register" class="signup-link">Sign Up</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    display: flex; 
+    margin: 0 auto;
+    justify-content: space-between;  /* Align both containers side by side */
+    gap: 20px;
+    width: 90%;  /* Ensure there's some space on the edges */
+}
+
+h2 {
+    text-align: center;
+    margin: 20px auto;
+    font-size: 1.8rem;
+    color: var(--heading-color-);
+}
+
+h5 {
+    margin-bottom: 5px;
+}
+
+.thankyous-container {
+    align-items: left;
+}
+
+h3 {
+    align-items:  center !important ;
+    text-align: center !important;
+}
+
+.shining-star-container,
+.thankyous-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 30px 20px;
+}
+
+
+.shining-star-container {
+    width: 45%;  /* Allocate space for shining star container */
+    height: 400px;
+    overflow-y: auto;
+}
+
+.thankyous-container {
+    width: 50%;  /* Take remaining space for thank you cards */
+    height: 400px;
+    overflow-y: auto;
+}
+
+.shining-star-container table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: #fff;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.buttons {
+    display: flex;
+    margin: 0 auto;
+}
+
+th {
+    background-color: var(--bc-red-); /* Red header */
+    color: white;
+    font-weight: 600;
+}
+
+td {
+    background-color: transparent;
+    color: #333;
+    font-size: 1rem;
+}
+
+.card {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-width: 100%;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.btn-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    width: 300px;
+    margin: 30px auto;
+    padding: 12px;
+    background-color: var(--btn-bg);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: var(--btn-hover-bg);
+    box-shadow: 0 4px 8px var(--btn-shadow);
+}
+
+:root {
+    --bc-red-: #ed1c24; /* Bright red */
+    --heading-color-: #333; /* Dark gray for text */
+    --input-bg: #f9f9f9;
+    --input-border: #ccc;
+    --btn-bg: var(--bc-red-); /* Button background red */
+    --btn-hover-bg: #d1141b; /* Button hover red */
+    --btn-shadow: rgba(237, 28, 36, 0.3); /* Button shadow effect */
+    --label-color: #555;
+    --link-color: var(--bc-red-);
+    --link-hover: #d1141b;
+    --container-bg: #f0f0f5;
+    --image-bg: #e0e0e5;
+}

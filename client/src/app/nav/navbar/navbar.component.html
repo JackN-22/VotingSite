@@ -1,0 +1,22 @@
+<nav class="container">
+  <div class="logo">
+    <h4><span class="red">Jack's</span> Voting Site</h4>
+    <div class="ul-links">
+      @if (accountService.currentUser()) {
+        <ul>
+          <li><a routerLink="/home">Shining Star</a></li>
+          <li><a routerLink="/thankyous">Thank Yous</a></li>
+        </ul>
+      }
+    </div>
+  </div>
+@if (accountService.currentUser()) {
+  <div class="account-options">
+    <ul>
+        <li><a href="#">Edit Account</a></li>
+        <li><a routerLink="/admin">Admin</a></li>
+        <li><a href="#" style="font-weight: bold;" (click)="logout()"><span>Sign Out</span></a></li>
+    </ul>
+  </div>
+}
+</nav>

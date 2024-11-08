@@ -1,0 +1,7 @@
+<div class="user-cards" appCardClick  [cardId]="users().userName" id="{{users().userName}}">
+    <img src="{{users().photoUrl || 'https://todolistapp.blob.core.windows.net/images/user-solid.svg'}}" alt="User profile">
+    <div class="user-details">
+        <p><span class="bc-name">{{users().name}}</span></p>
+        <p class="role">{{users().jobTitle}}</p>
+    </div>
+</div>

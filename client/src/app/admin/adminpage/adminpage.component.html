@@ -1,0 +1,36 @@
+<h2><span>Welcome!</span></h2>
+
+<div class="main-container">
+    <div class="shining-star-container">
+      <h3>Shining <span>Stars</span></h3>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">ST Vote Count</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let st of shiningStar">
+                <td>{{st.userName}}</td>
+                <td>{{st.stVoteCount}}</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+    <div class="thankyous-container">
+      <h3><span>Thank</span> Yous</h3>
+      <div class="card w-50" *ngFor="let tY of thankYous">
+        <div class="card-body">
+          <h5 class="card-title">{{tY.voter}} wants to thank <span>{{tY.nominee}}</span></h5>
+          <p class="card-text">{{tY.reason}}</p>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="buttons">
+  <button class="btn-submit">Export Results</button>
+  <button class="btn-submit">Reset Data</button>
+</div>
+
+

@@ -1,0 +1,122 @@
+* {
+    font-family: "Work Sans", sans-serif
+}
+
+body, html {
+    font-family: "Work Sans", sans-serif
+
+}
+
+
+  .p-toast-message {
+    padding: 20px;
+  }
+
+:root {
+    --bc-red-: #ed1c24; 
+    --heading-color-: #333;
+    --input-bg: #f9f9f9;
+    --input-border: #ccc;
+    --btn-bg: var(--bc-red-);
+    --btn-hover-bg: #d1141b;
+    --btn-shadow: rgba(237, 28, 36, 0.3);
+    --label-color: #555;
+    --link-color: var(--bc-red-);
+    --link-hover: #d1141b;
+    --container-bg: #f0f0f5;
+    --image-bg: #e0e0e5;
+}
+
+::-webkit-scrollbar {
+    width: 10px; /* Adjust width for appearance */
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Track color */
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #e63946; /* Thumb color */
+    border-radius: 8px;
+    border: 2px solid #f1f1f1; /* Adds a gap effect around thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #d62828; /* Darker color on hover */
+}
+
+.btn-submit {
+    border: none;
+    padding: 8px;
+    font-size: 15px;
+    font-family: inherit;
+    border: 2px solid var(--bc-red-);
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    display: block;
+    align-items: center;
+    background-color: transparent;
+    text-decoration: none;
+    color: var(--heading-color-);
+    width: 30%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.btn-submit:hover {
+    background-color: var(--bc-red-);
+    color: white;
+    transition: 0.5s;
+}
+
+body {
+        overflow-y: scroll;
+        overflow-x: hidden;
+        overflow: hidden;
+    /* Hide scrollbars */
+}
+
+input {
+    font-family: "Work Sans", sans-serif
+}
+
+label {
+    font-family: "Work Sans", sans-serif
+
+}
+
+p, a, h1, h2, h3, h4, h5 {
+    font-family: "Work Sans", sans-serif
+
+}
+
+/* Higher specificity for Toast message icons */
+.p-toast .p-toast-message-icon .pi {
+    color: #4caf50 !important; /* Force green for success icon */
+    font-size: 1.5rem !important; /* Ensure size */
+}
+
+.p-toast .p-toast-icon-close .pi {
+    color: #000 !important; /* Black color for close icon */
+    font-size: 1.2rem !important; /* Ensure size */
+}
+
+  
+
+
+span {
+    color: var(--bc-red-);
+}
+
+
+input:focus,
+textarea:focus {
+    border-bottom: 2px solid var(--bc-red-);
+    transition: 0.5s;
+}
+
+.red {
+    color: var(--bc-red-);
+}

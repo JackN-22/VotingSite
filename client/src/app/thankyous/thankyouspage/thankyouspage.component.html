@@ -1,0 +1,42 @@
+<form name="thankyouform" id="thankYous" #thankYousForm="ngForm" (ngSubmit)="submitThankYou()">
+    <div class="thankyou-container">
+      <div class="thankyou-left">
+        <h2><span>Thank</span> Yous</h2>
+        
+        <label for="name-thankyou">Your Name</label>
+        <input 
+          type="text" 
+          placeholder="Enter your name" 
+          id="name-thankyou"
+          [(ngModel)]="thankyou.voter"
+          name="voter"
+          required
+        >
+        
+        <label for="nominee-thankyou">Who would you like to thank?</label>
+        <input 
+          type="text" 
+          placeholder="Enter the person's name" 
+          id="nominee-thankyou"
+          [(ngModel)]="thankyou.nominee"
+          name="nominee"
+          required
+        >
+        
+        <label for="reason-thankyou">Reason</label>
+        <textarea 
+          name="reason" 
+          placeholder="Enter the reason for your Thank You" 
+          [(ngModel)]="thankyou.reason"
+          id="reason-thankyou"
+          required
+        ></textarea>
+        
+        <button type="submit" class="btn-submit">Submit</button>
+      </div>
+
+      <div class="thankyou-right">
+        <img src="/thankyou.jpg" alt="Thank You">
+      </div>
+</div>
+      

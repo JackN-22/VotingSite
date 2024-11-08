@@ -1,0 +1,121 @@
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--container-bg);
+    overflow: hidden;
+}
+
+.auth-container {
+    display: flex;
+    height: 100vh;
+}
+
+.auth-image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--image-bg);
+}
+
+.auth-image-section img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.auth-form-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    align-items: center;
+    background-color: white;
+}
+
+.form-wrapper {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--heading-color);
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    font-size: 1rem;
+    color: var(--label-color);
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    text-align: left;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid var(--input-border);
+    align-items: center;
+    margin: 0 auto;
+    background-color: var(--input-bg);
+    font-size: 1rem;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input:focus {
+    border-color: var(--bc-red);
+    outline: none;
+}
+
+.auth-submit-btn {
+    width: 100%;
+    padding: 14px;
+    margin-top: 1.5rem;
+    background-color: var(--btn-bg);
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 0 4px 8px var(--btn-shadow);
+}
+
+.auth-submit-btn:hover {
+    background-color: var(--btn-hover-bg);
+}
+
+.auth-footer {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.signup-link {
+    color: var(--link-color);
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.signup-link:hover {
+    color: var(--link-hover);
+}
+
+
+a {
+    cursor: pointer;
+}
